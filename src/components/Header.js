@@ -20,11 +20,13 @@ const Header = () => {
           <>
           <img src={Amazon} className="logo"></img>
           <img src={BookStore} className="logo"></img>
+         
           <Search
               placeholder="Find A Product"
               enterButton
               className = "searchBar"
             />
+
          <Button 
          className="login"
          key="1" 
@@ -32,6 +34,7 @@ const Header = () => {
          onClick={() => authenticate()}>
           {account ? <span>{account.slice(0,5)}...</span> : <span>login</span>}
           </Button>
+
           <Space size={"large"}>
               
               <Badge count={0} showZero>

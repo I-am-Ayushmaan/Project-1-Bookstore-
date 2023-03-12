@@ -20,12 +20,12 @@ function PriceRanges({priceMin, setPriceMin, priceMax, setPriceMax}) {
     <Space>
     <InputNumber
       value={priceMin}
-      formatter={value => `$ ${value}`}
+      formatter={value => `Rs ${value}`}
       onChange={(value) => changePrice(value,priceMax)}
     />
     <InputNumber
       value={priceMax}
-      formatter={value => `$ ${value}`}
+      formatter={value => `Rs ${value}`}
       onChange={(value) => changePrice(priceMin,value)}
     />
     </Space>

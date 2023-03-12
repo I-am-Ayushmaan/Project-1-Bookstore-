@@ -44,7 +44,7 @@ function Purchase({book}) {
 
   return (
     <>
-      <span className="price"> ${book.price}</span>
+      <span className="price"> Rs{book.price}</span>
       <p>No Import Fees & Free Shipping Included</p>
       <h1 style={{ color: "green" }}> In Stock </h1>
       <h3>Quantity</h3>
@@ -77,7 +77,7 @@ function Purchase({book}) {
           <img src={book.image} alt="product" style={{ width: "200px" }}></img>
           <div>
             <h3>{book.name}</h3>
-            <h2>${book.price}</h2>
+            <h2>Rs{book.price}</h2>
             <h4>Delivery Address</h4>
             <Input onChange={(value) => setDelivery(value.target.value)}></Input>
           </div>
