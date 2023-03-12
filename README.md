@@ -1,1 +1,1 @@
-# amazon-clone
+# frontend project - Bookstore website using react, html, css, and moralis ( a backend web3 api )
